@@ -10,8 +10,9 @@ if(!isset($_SESSION))
     <head>
         <meta charset="utf-8">
         
-        <link href="css/style.css" media="screen" rel="stylesheet">
-            <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
             
         
@@ -24,7 +25,6 @@ if(!isset($_SESSION))
 
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" type="text/css" href="estilos.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.2.3/flatpickr.css">
         <link rel="stylesheet" type="text/css" href="flatpickr.css">
@@ -33,7 +33,7 @@ if(!isset($_SESSION))
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.2.3/flatpickr.js"></script>
-    <body style="background-color: #c4d4e9;">
+    <body style="background-color: #2b1d42;">
     <div style="padding: 0px; float: left; width: 100%;">
         <br>
     </div>
@@ -118,6 +118,28 @@ if(!isset($_SESSION))
         }
         ?>
     <h1 class="titulo"> <center> ~ Carga de Vendedores ~ </center></h1>
+    <header class="sticky-top">
+			<nav class="navbar navbar-expand-lg navbar-light bg-nav" id="mainNav">
+				<div class="container-fluid">
+				    <a href="index.html">
+						<img src="img/logo.svg" alt="logo de pagina" class="logo img-fluid">
+					</a>
+				    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				      <span class="navbar-toggler-icon"></span>
+				    </button>
+				    <div class="collapse navbar-collapse" id="navbarNav">
+				      <ul class="navbar-nav ms-auto">
+				        <li class="nav-item">
+				          <a href="views/nosotros.html">Nosotros</a>
+				        </li>
+				        <li class="nav-item">
+				          <a href="views/contacto.html">Contacto</a>
+				        </li>
+				      </ul>
+				    </div>
+				</div>
+			</nav>
+		</header>
     
     <div style="padding: 0px; float: left; width: 100%;">
         <br>
@@ -135,21 +157,23 @@ if(!isset($_SESSION))
         }
         ?>
         <div class="container" style="padding: 0px; float: left; width: 25%;">
-            <div id="login" style="padding-bottom: 15px">
+            <div id="login" class="datos">
                 <h1>Datos del Vendedor</h1>
-            
-                
                 <p>
-                    <label for="usuario"> <b> Usuario:</b>
-                    <input type="text" name="usuario" id="usuario" class="input" value="" size="20" style="width: 62%"/></label>
+                <div class="form-floating mb-3">
+                    <input type="text" name="usuario" id="usuario" class="input form-control" value="" size="20" placeholder="name@example.com"/>
+                    <label for="usuario">Usuario</label>
+                </div>
                 </p>
                 <p>
-                    <label for="contrasenia"><b>Contraseña: </b>
-                    <input type="text" name="contrasenia" id="contrasenia" class="input" value="" size="20" style="width: 62%" /></label>
+                <div class="form-floating mb-3">
+                    <input type="text" name="contrasenia" id="contrasenia" class="input form-control" value="" size="20" placeholder="name@example.com"/>
+                    <label for="contrasenia">Contraseña</label>
+                </div>
                 </p>
-                
+            </div>
         <div style="float: left; width: 80%;">     </div> 
-        <div style="padding: 60px; float: left; width: 5%;">
+        <div class="contenedor">
             <p class="submit">
             <input type="submit" name="a" id="search" class="button" value="Agregar" />   
             </p>
@@ -164,6 +188,7 @@ if(!isset($_SESSION))
             </p>
         </div>
     </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </body>
     <?php
 }
