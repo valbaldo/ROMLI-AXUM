@@ -156,37 +156,61 @@ if(!isset($_SESSION))
         echo $mensaje;
         }
         ?>
-        <div class="container" style="padding: 0px; float: left; width: 25%;">
-            <div id="login" class="datos">
-                <h1>Datos del Vendedor</h1>
-                <p>
-                <div class="form-floating mb-3">
-                    <input type="text" name="usuario" id="usuario" class="input form-control" value="" size="20" placeholder="name@example.com"/>
-                    <label for="usuario">Usuario</label>
+            <div class="container">
+                <div id="login" class="datos">
+                    <h1>Datos del Vendedor</h1>
+                    <p>
+                    <div class="form-floating mb-3">
+                        <input type="text" name="usuario" id="usuario" class="input form-control" value="" size="20" placeholder="name@example.com"/>
+                        <label for="usuario">Usuario</label>
+                    </div>
+                    </p>
+                    <p>
+                    <div class="form-floating mb-3">
+                        <input type="text" name="contrasenia" id="contrasenia" class="input form-control" value="" size="20" placeholder="name@example.com"/>
+                        <label for="contrasenia">Contraseña</label>
+                    </div>
+                    </p>
                 </div>
-                </p>
-                <p>
-                <div class="form-floating mb-3">
-                    <input type="text" name="contrasenia" id="contrasenia" class="input form-control" value="" size="20" placeholder="name@example.com"/>
-                    <label for="contrasenia">Contraseña</label>
+            <div style="float: left; width: 80%;">     </div> 
+            <div class="contenedor">
+            <div class="container text-center">
+                <div class="row align-items-center">
+                    <div class="col">
+                    <p class="submit">
+                    <input type="submit" name="a" id="bonton" class="btn btn-outline-primary" value="Agregar" />   
+                    </p>
+                    </div>
+                    <div class="col">
+                    <p class="submit">
+                    <input type="submit" name="a" id="bonton" class="btn btn-outline-primary" value="Buscar" />
+                    </p>
+                    </div>
+                    <div class="col">
+                    <p class="submit">
+                    <input type="submit" name="a" id="bonton" class="btn btn-outline-primary" value="Eliminar" />
+                    </p>
+                    </div>
+                    <div class="col">
+                    <p class="submit">
+                    <input type="submit" name="a" id="bonton" class="btn btn-outline-primary" value="Modificar">
+                    </p>
+                    </div>
                 </div>
-                </p>
             </div>
-        <div style="float: left; width: 80%;">     </div> 
-        <div class="contenedor">
-            <p class="submit">
-            <input type="submit" name="a" id="search" class="button" value="Agregar" />   
-            </p>
-            <p class="submit">
-                <input type="submit" name="a" id="search" class="button" value="Buscar" />
-            </p>
-            <p class="submit">
-            <input type="submit" name="a" id="search" class="button" value="Eliminar" />
-            </p>
-            <p class="submit">
-                <input type="submit" name="a" id="update" class="button" value="Modificar" />
-            </p>
-        </div>
+                <!-- <p class="submit">
+                <input type="submit" name="a" id="search" class="button" value="Agregar" />   
+                </p>
+                <p class="submit">
+                    <input type="submit" name="a" id="search" class="button" value="Buscar" />
+                </p>
+                <p class="submit">
+                <input type="submit" name="a" id="search" class="button" value="Eliminar" />
+                </p>
+                <p class="submit">
+                    <input type="submit" name="a" id="update" class="button" value="Modificar" />
+                </p> -->
+            </div>
     </form>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </body>

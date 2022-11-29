@@ -13,7 +13,7 @@ body {
     margin: 0 auto; }
 
 h1, h2, h3 {
-    color: #f3b88d;
+    color: #fceccb;
     font-family: 'Quintessential', cursive; }
 
 
@@ -56,12 +56,29 @@ h1, h2, h3 {
             font-weight: 500; }
 
 
+label{
+    color: #8f3d4b;
+    font-size: 1.2rem;
+    line-height: 0.5rem;
+    font-weight: 600;
+}
 .datos{
-    background-color: blue;
-    
-   
+    margin-top: 10rem;
+    text-align: center;
 }
 
 .contenedor{
-    background-color: red;
+    margin-top: 2rem;
+    padding-top: 2rem;
+}
+
+#bonton{
+    color: #fceccb;
+    border: 1px solid #fceccb;
+    margin-bottom: 2em;
+    width: 15rem;
+}
+#bonton:hover{
+    color: #8f3d4b;
+    background-color: #fceccb;
 }
