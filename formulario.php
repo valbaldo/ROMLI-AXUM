@@ -10,7 +10,7 @@ if(!isset($_SESSION))
     <head>
         <meta charset="utf-8">
         
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="./css/style.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
@@ -25,7 +25,6 @@ if(!isset($_SESSION))
 
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <link rel="stylesheet" type="text/css" href="estilos.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.2.3/flatpickr.css">
         <link rel="stylesheet" type="text/css" href="flatpickr.css">
         
@@ -197,7 +196,7 @@ if(!isset($_SESSION))
                     </p>
                     </div>
                 </div>
-            </div>
+            </div>  
                 <!-- <p class="submit">
                 <input type="submit" name="a" id="search" class="button" value="Agregar" />   
                 </p>
@@ -255,10 +254,11 @@ else
                                     <label for="Antiguedad"> <b> Antiguedad:</b>
                                     <input type="text" name="Antiguedad" id="Antiguedad" class="input" value=""/></label>
                                     <button type="submit" >Ingresar Vendedor</button>
+                                    
+                            
                     </form>
                     <?php
                 }
-
                 break;
             }
         case "Buscar":
